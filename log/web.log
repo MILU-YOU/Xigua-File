@@ -1,0 +1,52 @@
+2023-03-14 15:53:16.194  INFO 3344 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 3344 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-03-14 15:53:16.201  INFO 3344 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-03-14 15:53:16.965  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-14 15:53:16.966  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-03-14 15:53:16.980  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-03-14 15:53:16.986  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-14 15:53:16.986  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-14 15:53:16.994  INFO 3344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-03-14 15:53:17.404  INFO 3344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-14 15:53:17.411  INFO 3344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-14 15:53:17.411  INFO 3344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-03-14 15:53:17.501  INFO 3344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-14 15:53:17.501  INFO 3344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
+2023-03-14 15:53:17.632  INFO 3344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-14 15:53:17.677  INFO 3344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-03-14 15:53:17.813  INFO 3344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-14 15:53:17.969  INFO 3344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-14 15:53:18.405  INFO 3344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-14 15:53:18.417  INFO 3344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-14 15:53:19.412  INFO 3344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-14 15:53:19.419  INFO 3344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-14 15:53:20.399  WARN 3344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-14 15:53:20.575  INFO 3344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-14 15:53:20.764  INFO 3344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-14 15:53:21.162  INFO 3344 --- [main] team.zlg.file.Application                : Started Application in 5.319 seconds (JVM running for 6.053)
+2023-03-14 15:53:21.164  INFO 3344 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-03-14 17:21:17.704  INFO 15996 --- [main] team.zlg.xiguafile2.Appilcation          : Starting Appilcation using Java 1.8.0_131 on MILUYOU with PID 15996 (E:\JavaProject\xiguafile2\target\classes started by 86135 in E:\JavaProject\xiguafile2)
+2023-03-14 17:21:17.708  INFO 15996 --- [main] team.zlg.xiguafile2.Appilcation          : No active profile set, falling back to default profiles: default
+2023-03-14 17:21:18.920  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-14 17:21:18.921  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-03-14 17:21:18.928  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2023-03-14 17:21:18.940  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-03-14 17:21:18.941  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-14 17:21:18.948  INFO 15996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-03-14 17:21:19.039  WARN 15996 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[team.zlg.xiguafile2]' package. Please check your configuration.
+2023-03-14 17:21:19.396  INFO 15996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-14 17:21:19.402  INFO 15996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-14 17:21:19.402  INFO 15996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-03-14 17:21:19.484  INFO 15996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-14 17:21:19.484  INFO 15996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1731 ms
+2023-03-14 17:21:19.590  INFO 15996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-14 17:21:19.620  INFO 15996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-03-14 17:21:19.715  INFO 15996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-14 17:21:19.783  INFO 15996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-14 17:21:20.265  INFO 15996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-14 17:21:20.272  INFO 15996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-14 17:21:20.413  INFO 15996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-14 17:21:20.420  INFO 15996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-14 17:21:20.579  WARN 15996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-14 17:21:20.737  INFO 15996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-14 17:21:21.350  INFO 15996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-14 17:21:21.490  INFO 15996 --- [main] team.zlg.xiguafile2.Appilcation          : Started Appilcation in 4.327 seconds (JVM running for 5.695)

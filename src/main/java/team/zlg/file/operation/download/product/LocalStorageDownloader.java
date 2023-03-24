@@ -24,8 +24,10 @@ public class LocalStorageDownloader extends Downloader {
                 fis = new FileInputStream(file);
                 bis = new BufferedInputStream(fis);
                 OutputStream os = httpServletResponse.getOutputStream();
+                //从输入流中读取一定数量的字节，并将这些字节存储到具有缓冲作用的数组b中，返回一次性读取的字节数
                 int i = bis.read(buffer);
                 while (i != -1) {
+                    //向输出流中写入buffer缓冲字节数组中0到i个的内容
                     os.write(buffer, 0, i);
                     i = bis.read(buffer);
                 }

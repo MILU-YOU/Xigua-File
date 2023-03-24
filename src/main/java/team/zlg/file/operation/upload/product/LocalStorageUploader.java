@@ -38,7 +38,7 @@ public class LocalStorageUploader extends Uploader {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
         StandardMultipartHttpServletRequest standardMultipartHttpServletRequest = (StandardMultipartHttpServletRequest) httpServletRequest;
         boolean isMultipart = ServletFileUpload.isMultipartContent(standardMultipartHttpServletRequest);
-        //判断是否是上传，即判断encType="multipart/form-data"
+        //判断是否是文件上传，即判断前端标签的encType属性是否为"multipart/form-data"
         if (!isMultipart) {
             throw new UploadException("未包含文件上传域");
         }
@@ -47,6 +47,7 @@ public class LocalStorageUploader extends Uploader {
 
         try {
             Iterator<String> iter = standardMultipartHttpServletRequest.getFileNames();
+            //可能上传有多个文件
             while (iter.hasNext()) {
                 saveUploadFileList = doUpload(standardMultipartHttpServletRequest, savePath, iter, uploadFile);
             }
@@ -60,6 +61,7 @@ public class LocalStorageUploader extends Uploader {
 
     private List<UploadFile> doUpload(StandardMultipartHttpServletRequest standardMultipartHttpServletRequest, String savePath, Iterator<String> iter, UploadFile uploadFile) throws IOException, NotSameFileException {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
+        //通过文件名拿到具体的文件，得到其唯一标识以及文件名，文件类型存入uploadFile对象中
         MultipartFile multipartfile = standardMultipartHttpServletRequest.getFile(iter.next());
 
         String timeStampName = uploadFile.getIdentifier();
@@ -108,15 +110,16 @@ public class LocalStorageUploader extends Uploader {
         fileChannel.close();
         raf.close();
         //判断是否完成文件的传输并进行校验与重命名
-        //校验是判断tempfile的路径的输入流进行md5加密后与文件的Identifier是否相同
         boolean isComplete = checkUploadStatus(uploadFile, confFile);
         if (isComplete) {
             FileInputStream fileInputStream = new FileInputStream(tempFile.getPath());
             String md5 = DigestUtils.md5DigestAsHex(fileInputStream);
             fileInputStream.close();
+            //校验文件完整性，临时文件路径的输入流的md5与前端传来的identifier不相同，则不是相同文件，抛出异常。
             if (StringUtils.isNotBlank(md5) && !md5.equals(uploadFile.getIdentifier())) {
                 throw new NotSameFileException();
             }
+            //临时文件转为正式文件
             tempFile.renameTo(file);
             //如果上传文件为图像，则生成图像缩略图
             if (FileUtil.isImageFile(uploadFile.getFileType())){

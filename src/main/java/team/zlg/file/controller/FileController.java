@@ -44,7 +44,7 @@ public class FileController {
             RestResult.fail().message("token认证失败");
         }
         LambdaQueryWrapper<UserFile> lambdaQueryWrapper = new LambdaQueryWrapper<>();
-        lambdaQueryWrapper.eq(UserFile::getFileName, "").eq(UserFile::getFilePath, "").eq(UserFile::getUserId, 0);
+        lambdaQueryWrapper.eq(UserFile::getFileName, createFileDto.getFileName()).eq(UserFile::getFilePath, createFileDto.getFilePath()).eq(UserFile::getUserId, sessionUser.getUserId());
         List<UserFile> userfiles = userfileService.list(lambdaQueryWrapper);
         if (!userfiles.isEmpty()) {
             RestResult.fail().message("同目录下文件名重复");
@@ -119,8 +119,7 @@ public class FileController {
 
     @Operation(summary = "批量删除文件", description = "批量删除文件", tags = { "file" })
     @RequestMapping(value = "/batchdeletefile", method = RequestMethod.POST)
-    public RestResult<String> deleteImageByIds(@RequestBody BatchDeleteFileDTO batchDeleteFileDto,
-                                               @RequestHeader("token") String token) {
+    public RestResult<String> deleteImageByIds(@RequestBody BatchDeleteFileDTO batchDeleteFileDto, @RequestHeader("token") String token) {
 
         User sessionUser = userService.getUserByToken(token);
 

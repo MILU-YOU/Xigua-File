@@ -36,7 +36,7 @@ public class FiletransferServiceImpl implements FiletransferService {
     @Override
     public void uploadFile(HttpServletRequest request, UploadFileDTO uploadFileDto, Long userId) {
 
-        //把前端传来的uploadFileDto的信息保存金uploadFile对象中
+        //把前端传来的uploadFileDto的信息保存进uploadFile对象中
         Uploader uploader = null;
         UploadFile uploadFile = new UploadFile();
         uploadFile.setChunkNumber(uploadFileDto.getChunkNumber());

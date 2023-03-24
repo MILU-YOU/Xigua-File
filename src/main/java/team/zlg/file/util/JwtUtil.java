@@ -28,9 +28,6 @@ import io.jsonwebtoken.Jwts;
 @Component
 public class JwtUtil {
 
-    //@Resource 默认按byName自动注入,是JSR-250定义的注解，是Java标准，支持几乎所有java框架。
-    // @AutoWried 按bytype自动注入,是spring定义的注解，与Spring框架强耦合。
-    // 换言之， @Autowired 能用的， @Resource 也能用， @Autowired 不能用的， @Resource 还能用。
     @Resource
     JwtProperties jwtProperties;
     /**
@@ -56,7 +53,7 @@ public class JwtUtil {
         // 生成JWT的时间
         long nowTime = System.currentTimeMillis();
         Date nowDate = new Date(nowTime);
-        // 生成签名的时候使用的秘钥secret，切记这个秘钥不能外露，是你服务端的私钥，在任何场景都不应该流露出去，一旦客户端得知这个secret，那就意味着客户端是可以自我签发jwt的
+        // 生成签名的时候使用的秘钥secret
         SecretKey key = generalKey();
 
         //生成js脚本manager
@@ -64,7 +61,7 @@ public class JwtUtil {
         ScriptEngine se = manager.getEngineByName("js");
         int expireTime = 0;
         try {
-            //得到payload中的过期时间声明
+            //得到payload中的过期时间声明，eval() 函数会将传入的字符串当做 JavaScript 代码进行执行。
             expireTime =(int) se.eval(jwtProperties.getPayload().getRegisterdClaims().getExp());
         } catch (ScriptException e) {
             e.printStackTrace();

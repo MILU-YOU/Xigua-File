@@ -19,10 +19,9 @@ public class PathUtil {
         String path = "upload";
         SimpleDateFormat formater = new SimpleDateFormat("yyyyMMdd");
         path = File.separator + path + File.separator + formater.format(new Date());
-
         String staticPath = PathUtil.getStaticPath();
 
-        File dir = new File(staticPath + path);
+        File dir = new File(staticPath + path); // E:\Graduation Project\xiguafile\target\classes\static\\upload\yyyyMMdd
         if (!dir.exists()) {
             try {
                 boolean isSuccessMakeDir = dir.mkdirs();
@@ -49,7 +48,7 @@ public class PathUtil {
                 projectRootAbsolutePath = projectRootAbsolutePath.substring(0, index);
             }
 
-            return projectRootAbsolutePath + "static" + File.separator;
+            return projectRootAbsolutePath + "static" + File.separator; // E:\Graduation Project\xiguafile\target\classes\static\
         }
 
 
@@ -77,8 +76,8 @@ public class PathUtil {
     public static String getProjectRootPath() {
         String absolutePath = null;
         try {
-            String url = ResourceUtils.getURL("classpath:").getPath();
-            absolutePath = urlDecode(new File(url).getAbsolutePath()) + File.separator;
+            String url = ResourceUtils.getURL("classpath:").getPath();  // /E:/Graduation%20Project/xiguafile/target/classes/
+            absolutePath = urlDecode(new File(url).getAbsolutePath()) + File.separator; // E:\Graduation Project\xiguafile\target\classes\
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

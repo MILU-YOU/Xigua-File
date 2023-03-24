@@ -97,6 +97,7 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
         }else{
 
             UserFile userFileTemp = userfileMapper.selectById(userFileId);
+            //文件删除的时候pointCount也减 1，此时如果引用数量大于 0，则文件逻辑删除，等于 0 时文件需要彻底物理删除
             File file = fileMapper.selectById(userFileTemp.getFileId());
 
             LambdaUpdateWrapper<UserFile> userFileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
@@ -162,6 +163,7 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
         }).start();
     }
 
+    //移动文件即更新数据库中文件路径
     @Override
     public void updateFilepathByFilepath(String oldfilePath, String newfilePath, String fileName, String extendName, Long userId) {
         if ("null".equals(extendName)){
@@ -194,6 +196,7 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
     }
 
 
+    //将用户的所有文件夹数据返回
     @Override
     public List<UserFile> selectFilePathTreeByUserId(Long userId) {
         LambdaQueryWrapper<UserFile> lambdaQueryWrapper = new LambdaQueryWrapper<>();

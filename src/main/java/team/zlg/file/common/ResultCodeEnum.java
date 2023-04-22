@@ -13,6 +13,7 @@ public enum ResultCodeEnum {
     PARAM_ERROR(false,20002,"参数错误"),
     NULL_POINT(false, 20003, "空指针异常"),
     INDEX_OUT_OF_BOUNDS(false, 20004, "下标越界异常"),
+    DUPLICATEKEY(false,2005,"已存在同名文件"),
     ;
 
     // 响应是否成功

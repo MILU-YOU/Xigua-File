@@ -1,36 +1,33 @@
-2023-03-24 10:43:10.973  INFO 9556 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 9556 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 10:43:10.980  INFO 9556 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 10:43:11.875  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:43:11.876  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 10:43:11.893  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
-2023-03-24 10:43:11.899  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:43:11.899  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 10:43:11.907  INFO 9556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 10:43:12.382  INFO 9556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-24 10:43:12.395  INFO 9556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 10:43:12.395  INFO 9556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 10:43:12.496  INFO 9556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 10:43:12.496  INFO 9556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1467 ms
-2023-03-24 10:43:12.659  INFO 9556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 10:43:12.704  INFO 9556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 10:43:12.834  INFO 9556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 10:43:13.006  INFO 9556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 10:43:13.509  INFO 9556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 10:43:13.521  INFO 9556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 10:43:14.097  INFO 9556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 10:43:14.104  INFO 9556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:43:14.976  WARN 9556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 10:43:15.155  INFO 9556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:43:15.334  WARN 9556 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2023-03-24 10:43:15.334  INFO 9556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:43:15.336  INFO 9556 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:43:15.338  INFO 9556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-24 10:43:15.341  INFO 9556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-24 10:43:15.342  INFO 9556 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-24 10:43:15.349  INFO 9556 --- [main] ConditionEvaluationReportLoggingListener : 
+2023-04-22 14:58:32.896  INFO 18796 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 18796 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 14:58:32.912  INFO 18796 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 14:58:34.164  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 14:58:34.165  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 14:58:34.186  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-04-22 14:58:34.197  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 14:58:34.198  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 14:58:34.209  INFO 18796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-04-22 14:58:34.820  INFO 18796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 14:58:34.830  INFO 18796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 14:58:34.830  INFO 18796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 14:58:34.950  INFO 18796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 14:58:34.950  INFO 18796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1940 ms
+2023-04-22 14:58:35.137  INFO 18796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 14:58:35.193  INFO 18796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 14:58:35.374  INFO 18796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 14:58:35.574  INFO 18796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 14:58:36.436  INFO 18796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 14:58:36.451  INFO 18796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 14:58:37.313  INFO 18796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 14:58:37.321  INFO 18796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 14:58:38.796  WARN 18796 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<?, ?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-04-22 14:58:38.796  INFO 18796 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 14:58:38.798  INFO 18796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 14:58:38.805  INFO 18796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 14:58:38.807  INFO 18796 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 14:58:38.823  INFO 18796 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-03-24 10:43:15.362 ERROR 9556 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2023-04-22 14:58:38.846 ERROR 18796 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
 ***************************
 APPLICATION FAILED TO START
@@ -38,79 +35,427 @@ APPLICATION FAILED TO START
 
 Description:
 
-Web server failed to start. Port 8080 was already in use.
+Field redisTemplate in team.zlg.file.controller.UserController required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
 
 Action:
 
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
 
-2023-03-24 10:44:08.612  INFO 19704 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 19704 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 10:44:08.616  INFO 19704 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 10:44:09.348  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:44:09.348  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 10:44:09.360  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-03-24 10:44:09.365  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:44:09.366  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 10:44:09.373  INFO 19704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 10:44:09.725  INFO 19704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-24 10:44:09.731  INFO 19704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 10:44:09.731  INFO 19704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 10:44:09.801  INFO 19704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 10:44:09.801  INFO 19704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1129 ms
-2023-03-24 10:44:09.912  INFO 19704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 10:44:09.946  INFO 19704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 10:44:10.052  INFO 19704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 10:44:10.180  INFO 19704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 10:44:10.605  INFO 19704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 10:44:10.613  INFO 19704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 10:44:11.082  INFO 19704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 10:44:11.088  INFO 19704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:44:11.934  WARN 19704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 10:44:12.096  INFO 19704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:44:12.271  INFO 19704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-24 10:44:12.660  INFO 19704 --- [main] team.zlg.file.Application                : Started Application in 4.368 seconds (JVM running for 5.105)
-2023-03-24 10:44:12.663  INFO 19704 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 10:44:12.663  INFO 19704 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 10:44:12.664  INFO 19704 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 10:44:12.664  INFO 19704 --- [main] team.zlg.file.Application                : \
-2023-03-24 10:44:12.669  INFO 19704 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 10:44:12.669  INFO 19704 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 10:44:20.278  INFO 19704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 10:44:20.278  INFO 19704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 10:44:20.280  INFO 19704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-24 10:46:23.548  INFO 17516 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 17516 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 10:46:23.551  INFO 17516 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 10:46:24.444  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:46:24.445  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 10:46:24.457  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-03-24 10:46:24.463  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:46:24.463  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 10:46:24.471  INFO 17516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 10:46:24.866  INFO 17516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-24 10:46:24.872  INFO 17516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 10:46:24.872  INFO 17516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 10:46:24.939  INFO 17516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 10:46:24.939  INFO 17516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1335 ms
-2023-03-24 10:46:25.050  INFO 17516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 10:46:25.080  INFO 17516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 10:46:25.173  INFO 17516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 10:46:25.309  INFO 17516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 10:46:25.723  INFO 17516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 10:46:25.732  INFO 17516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 10:46:26.135  INFO 17516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 10:46:26.141  INFO 17516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:46:26.955  WARN 17516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 10:46:27.113  INFO 17516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:46:27.272  WARN 17516 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2023-03-24 10:46:27.273  INFO 17516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:46:27.274  INFO 17516 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:46:27.276  INFO 17516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-24 10:46:27.280  INFO 17516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-24 10:46:27.281  INFO 17516 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-24 10:46:27.288  INFO 17516 --- [main] ConditionEvaluationReportLoggingListener : 
+2023-04-22 15:17:00.778  INFO 5436 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 5436 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 15:17:00.781  INFO 5436 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 15:17:01.645  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:17:01.645  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 15:17:01.658  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 15:17:01.664  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:17:01.664  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 15:17:01.671  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 15:17:01.682  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:17:01.683  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 15:17:01.694  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 15:17:02.132  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 15:17:02.139  INFO 5436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 15:17:02.139  INFO 5436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 15:17:02.230  INFO 5436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 15:17:02.230  INFO 5436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1397 ms
+2023-04-22 15:17:02.382  INFO 5436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 15:17:02.424  INFO 5436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 15:17:02.568  INFO 5436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 15:17:02.633  INFO 5436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 15:17:03.207  INFO 5436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 15:17:03.218  INFO 5436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 15:17:03.690  INFO 5436 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 15:17:03.697  INFO 5436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:17:04.944  WARN 5436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 15:17:05.342  INFO 5436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:17:05.582  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 15:17:05.812  INFO 5436 --- [main] team.zlg.file.Application                : Started Application in 5.5 seconds (JVM running for 6.546)
+2023-04-22 15:17:05.814  INFO 5436 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 15:41:38.246  INFO 14000 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 14000 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 15:41:38.249  INFO 14000 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 15:41:39.003  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:41:39.003  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 15:41:39.015  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-22 15:41:39.021  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:41:39.021  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 15:41:39.028  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 15:41:39.039  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:41:39.039  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 15:41:39.049  INFO 14000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 15:41:39.449  INFO 14000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 15:41:39.456  INFO 14000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 15:41:39.456  INFO 14000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 15:41:39.558  INFO 14000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 15:41:39.558  INFO 14000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
+2023-04-22 15:41:39.687  INFO 14000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 15:41:39.742  INFO 14000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 15:41:39.930  INFO 14000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 15:41:40.036  INFO 14000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 15:41:40.643  INFO 14000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 15:41:40.655  INFO 14000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 15:41:41.215  INFO 14000 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 15:41:41.223  INFO 14000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:41:42.510  WARN 14000 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 15:41:42.842  INFO 14000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:41:43.062  INFO 14000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 15:41:43.284  INFO 14000 --- [main] team.zlg.file.Application                : Started Application in 5.58 seconds (JVM running for 6.765)
+2023-04-22 15:41:43.286  INFO 14000 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 15:47:00.288  INFO 14000 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 15:47:00.289  INFO 14000 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 15:47:00.295  INFO 14000 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-04-22 15:47:00.671 ERROR 14000 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:47:02.130 ERROR 14000 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:47:02.142 ERROR 14000 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:49:33.023 ERROR 14000 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:49:46.128 ERROR 14000 --- [http-nio-8081-exec-8] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:51:02.342 ERROR 14000 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:51:38.847 ERROR 14000 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:51:56.695 ERROR 14000 --- [http-nio-8081-exec-5] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:52:12.288 ERROR 14000 --- [http-nio-8081-exec-4] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:52:53.193 ERROR 14000 --- [http-nio-8081-exec-6] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:53:15.402 ERROR 14000 --- [http-nio-8081-exec-3] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:53:24.190 ERROR 14000 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:53:56.309 ERROR 14000 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:54:20.853 ERROR 14000 --- [http-nio-8081-exec-10] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+2023-04-22 15:55:36.920  INFO 18748 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 18748 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 15:55:36.924  INFO 18748 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 15:55:37.732  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:55:37.732  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 15:55:37.744  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-22 15:55:37.750  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:55:37.751  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 15:55:37.759  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 15:55:37.768  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:55:37.769  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 15:55:37.779  INFO 18748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 15:55:38.163  INFO 18748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 15:55:38.169  INFO 18748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 15:55:38.169  INFO 18748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 15:55:38.254  INFO 18748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 15:55:38.254  INFO 18748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1272 ms
+2023-04-22 15:55:38.369  INFO 18748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 15:55:38.409  INFO 18748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 15:55:38.555  INFO 18748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 15:55:38.620  INFO 18748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 15:55:39.158  INFO 18748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 15:55:39.166  INFO 18748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 15:55:39.602  INFO 18748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 15:55:39.609  INFO 18748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:55:40.860  WARN 18748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 15:55:41.188  INFO 18748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:55:41.402  INFO 18748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 15:55:41.623  INFO 18748 --- [main] team.zlg.file.Application                : Started Application in 5.126 seconds (JVM running for 6.169)
+2023-04-22 15:55:41.625  INFO 18748 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 15:55:49.301  INFO 18748 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 15:55:49.301  INFO 18748 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 15:55:49.304  INFO 18748 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 15:56:01.615 ERROR 18748 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:56:25.072 ERROR 18748 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:57:13.397 ERROR 18748 --- [http-nio-8081-exec-4] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:58:32.853 ERROR 18748 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 15:58:59.383  INFO 5196 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 5196 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 15:58:59.386  INFO 5196 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 15:59:00.620  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:00.621  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 15:59:00.644  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-04-22 15:59:00.654  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:00.654  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 15:59:00.667  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 15:59:00.686  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:00.689  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 15:59:00.704  INFO 5196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-04-22 15:59:01.205  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 15:59:01.212  INFO 5196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 15:59:01.212  INFO 5196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 15:59:01.318  INFO 5196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 15:59:01.318  INFO 5196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1879 ms
+2023-04-22 15:59:01.520  INFO 5196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 15:59:01.565  INFO 5196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 15:59:01.818  INFO 5196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 15:59:01.959  INFO 5196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 15:59:02.686  INFO 5196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 15:59:02.697  INFO 5196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 15:59:03.449  INFO 5196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 15:59:03.462  INFO 5196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:59:05.171  WARN 5196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 15:59:05.703  INFO 5196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:59:06.079  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 15:59:06.520  INFO 5196 --- [main] team.zlg.file.Application                : Started Application in 7.532 seconds (JVM running for 9.296)
+2023-04-22 15:59:06.526  INFO 5196 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 15:59:14.517  INFO 5196 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:59:14.555  INFO 5196 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:59:14.559  INFO 5196 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 15:59:14.592  INFO 5196 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 15:59:17.241  INFO 18776 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 18776 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 15:59:17.245  INFO 18776 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 15:59:18.049  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:18.049  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 15:59:18.063  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 15:59:18.069  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:18.069  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 15:59:18.079  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 15:59:18.094  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 15:59:18.095  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 15:59:18.109  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-04-22 15:59:18.650  INFO 18776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 15:59:18.658  INFO 18776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 15:59:18.658  INFO 18776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 15:59:18.753  INFO 18776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 15:59:18.753  INFO 18776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1449 ms
+2023-04-22 15:59:18.909  INFO 18776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 15:59:18.950  INFO 18776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 15:59:19.127  INFO 18776 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 15:59:19.225  INFO 18776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 15:59:19.855  INFO 18776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 15:59:19.866  INFO 18776 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 15:59:20.369  INFO 18776 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 15:59:20.377  INFO 18776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 15:59:23.630  WARN 18776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 15:59:24.405  INFO 18776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 15:59:25.022  INFO 18776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 15:59:25.617  INFO 18776 --- [main] team.zlg.file.Application                : Started Application in 8.881 seconds (JVM running for 10.228)
+2023-04-22 15:59:25.623  INFO 18776 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 15:59:30.118  INFO 18776 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 15:59:30.118  INFO 18776 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 15:59:30.121  INFO 18776 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-22 16:10:39.570  WARN 18776 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m19s612ms67µs).
+2023-04-22 16:10:39.597 ERROR 18776 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:10:39.637 ERROR 18776 --- [http-nio-8081-exec-1] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.apache.catalina.connector.ClientAbortException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+2023-04-22 16:10:39.649  WARN 18776 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler team.zlg.file.advice.GlobalExceptionHandlerAdvice#error(Exception)
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140) ~[na:1.8.0_131]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1176) ~[jackson-core-2.11.3.jar:2.11.3]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008) ~[jackson-databind-2.11.3.jar:2.11.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:345) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:420) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1321) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1132) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[na:1.8.0_131]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:572) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1195) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:402) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.Response.action(Response.java:209) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	... 57 common frames omitted
+
+2023-04-22 16:10:40.114  INFO 18776 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 16:10:40.148  INFO 18776 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:10:40.150  INFO 18776 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 16:10:40.153  INFO 18776 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 16:10:44.251  INFO 4848 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 4848 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 16:10:44.255  INFO 4848 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 16:10:45.348  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:10:45.349  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 16:10:45.363  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 16:10:45.370  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:10:45.371  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:10:45.382  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 16:10:45.394  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:10:45.396  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 16:10:45.416  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-04-22 16:10:46.001  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 16:10:46.009  INFO 4848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:10:46.009  INFO 4848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 16:10:46.111  INFO 4848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:10:46.112  INFO 4848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1794 ms
+2023-04-22 16:10:46.265  INFO 4848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:10:46.309  INFO 4848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 16:10:46.508  INFO 4848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 16:10:46.595  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 16:10:47.180  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 16:10:47.190  INFO 4848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 16:10:47.819  INFO 4848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:10:47.831  INFO 4848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:10:50.841  WARN 4848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:10:51.422  INFO 4848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 16:10:51.965  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 16:10:52.569  INFO 4848 --- [main] team.zlg.file.Application                : Started Application in 8.873 seconds (JVM running for 10.312)
+2023-04-22 16:10:52.575  INFO 4848 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 16:11:13.142  INFO 4848 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 16:11:13.142  INFO 4848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 16:11:13.145  INFO 4848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 16:11:13.358 ERROR 4848 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:11:28.011 ERROR 4848 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:11:28.275 ERROR 4848 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:13:36.749  WARN 4848 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s445ms677µs200ns).
+2023-04-22 16:13:38.138  INFO 4848 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 16:13:38.178  INFO 4848 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:13:38.182  INFO 4848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 16:13:38.193  INFO 4848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 16:13:46.601  INFO 12688 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 12688 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 16:13:46.604  INFO 12688 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 16:13:47.995  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:13:47.996  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 16:13:48.059  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 0 JDBC repository interfaces.
+2023-04-22 16:13:48.070  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:13:48.070  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:13:48.089  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2023-04-22 16:13:48.111  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:13:48.113  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 16:13:48.134  INFO 12688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-04-22 16:13:48.992  INFO 12688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 16:13:48.999  INFO 12688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:13:49.000  INFO 12688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 16:13:49.156  INFO 12688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:13:49.157  INFO 12688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2446 ms
+2023-04-22 16:13:49.505  INFO 12688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:13:49.610  INFO 12688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 16:13:49.877  INFO 12688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 16:13:50.002  INFO 12688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 16:13:51.118  INFO 12688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 16:13:51.131  INFO 12688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 16:13:51.945  INFO 12688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:13:51.955  INFO 12688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:13:54.281  WARN 12688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:13:54.825  INFO 12688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 16:13:55.156  INFO 12688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 16:13:55.489  INFO 12688 --- [main] team.zlg.file.Application                : Started Application in 9.721 seconds (JVM running for 11.905)
+2023-04-22 16:13:55.493  INFO 12688 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 16:16:46.282  INFO 12688 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 16:16:46.282  INFO 12688 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 16:16:46.283  INFO 12688 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-22 16:23:25.780 ERROR 12688 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:23:59.202 ERROR 12688 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:26:29.394  INFO 18520 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 18520 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 16:26:29.399  INFO 18520 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 16:26:30.315  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:26:30.316  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 16:26:30.336  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-04-22 16:26:30.344  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:26:30.345  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:26:30.355  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2023-04-22 16:26:30.373  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 16:26:30.374  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 16:26:30.387  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 16:26:30.845  INFO 18520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 16:26:30.853  INFO 18520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:26:30.853  INFO 18520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 16:26:30.955  INFO 18520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:26:30.955  INFO 18520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1486 ms
+2023-04-22 16:26:31.089  INFO 18520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:26:31.146  INFO 18520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 16:26:31.333  INFO 18520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 16:26:31.427  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 16:26:32.022  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 16:26:32.034  INFO 18520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 16:26:32.565  INFO 18520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:26:32.572  INFO 18520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:26:33.921  WARN 18520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:26:34.270  INFO 18520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 16:26:34.523  INFO 18520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 16:26:34.767  INFO 18520 --- [main] team.zlg.file.Application                : Started Application in 5.962 seconds (JVM running for 7.069)
+2023-04-22 16:26:34.769  INFO 18520 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 16:26:50.976  INFO 18520 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 16:26:50.976  INFO 18520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 16:26:50.981  INFO 18520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-04-22 16:26:51.067 ERROR 18520 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:27:15.055 ERROR 18520 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 16:27:15.318 ERROR 18520 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:36:53.703  INFO 4068 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 4068 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 20:36:53.707  INFO 4068 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 20:36:54.706  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:36:54.707  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 20:36:54.723  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2023-04-22 20:36:54.730  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:36:54.731  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 20:36:54.741  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 20:36:54.755  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:36:54.756  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 20:36:54.770  INFO 4068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 20:36:55.458  INFO 4068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 20:36:55.471  INFO 4068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 20:36:55.472  INFO 4068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 20:36:55.601  INFO 4068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 20:36:55.601  INFO 4068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1832 ms
+2023-04-22 20:36:55.799  INFO 4068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 20:36:55.865  INFO 4068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 20:36:56.127  INFO 4068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 20:36:56.266  INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 20:36:57.595  INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 20:36:57.621  INFO 4068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 20:36:58.586  INFO 4068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 20:36:58.600  INFO 4068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:37:02.713  WARN 4068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 20:37:03.602  INFO 4068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:37:04.493  WARN 4068 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2023-04-22 20:37:04.495  INFO 4068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:37:04.542  INFO 4068 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:37:04.552  INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 20:37:04.562  INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 20:37:04.568  INFO 4068 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 20:37:04.589  INFO 4068 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-03-24 10:46:27.297 ERROR 17516 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2023-04-22 20:37:04.630 ERROR 4068 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
 ***************************
 APPLICATION FAILED TO START
@@ -118,356 +463,230 @@ APPLICATION FAILED TO START
 
 Description:
 
-Web server failed to start. Port 8080 was already in use.
+Web server failed to start. Port 8081 was already in use.
 
 Action:
 
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
 
-2023-03-24 10:54:00.410  INFO 7608 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 7608 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 10:54:00.416  INFO 7608 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 10:54:01.207  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:54:01.208  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 10:54:01.221  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-2023-03-24 10:54:01.227  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 10:54:01.227  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 10:54:01.235  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 10:54:01.595  INFO 7608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-24 10:54:01.601  INFO 7608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 10:54:01.601  INFO 7608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 10:54:01.669  INFO 7608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 10:54:01.669  INFO 7608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1162 ms
-2023-03-24 10:54:01.781  INFO 7608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 10:54:01.813  INFO 7608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 10:54:01.905  INFO 7608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 10:54:02.036  INFO 7608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 10:54:02.459  INFO 7608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 10:54:02.467  INFO 7608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 10:54:02.874  INFO 7608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 10:54:02.880  INFO 7608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 10:54:03.737  WARN 7608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 10:54:03.917  INFO 7608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 10:54:04.084  INFO 7608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-24 10:54:04.445  INFO 7608 --- [main] team.zlg.file.Application                : Started Application in 4.493 seconds (JVM running for 5.302)
-2023-03-24 10:54:04.447  INFO 7608 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 10:54:04.447  INFO 7608 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 10:54:04.448  INFO 7608 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 10:54:04.448  INFO 7608 --- [main] team.zlg.file.Application                : \
-2023-03-24 10:54:04.451  INFO 7608 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 10:54:04.451  INFO 7608 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 11:48:59.812  INFO 2224 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 2224 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 11:48:59.815  INFO 2224 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 11:49:00.629  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 11:49:00.630  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 11:49:00.643  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-2023-03-24 11:49:00.649  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 11:49:00.649  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 11:49:00.661  INFO 2224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2023-03-24 11:49:01.154  INFO 2224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 11:49:01.161  INFO 2224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 11:49:01.161  INFO 2224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 11:49:01.239  INFO 2224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 11:49:01.239  INFO 2224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
-2023-03-24 11:49:01.417  INFO 2224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 11:49:01.458  INFO 2224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 11:49:01.569  INFO 2224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 11:49:01.733  INFO 2224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 11:49:02.371  INFO 2224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 11:49:02.389  INFO 2224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 11:49:03.172  INFO 2224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 11:49:03.179  INFO 2224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 11:49:04.342  WARN 2224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 11:49:04.555  INFO 2224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 11:49:04.759  INFO 2224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 11:49:05.275  INFO 2224 --- [main] team.zlg.file.Application                : Started Application in 6.005 seconds (JVM running for 7.418)
-2023-03-24 11:49:05.278  INFO 2224 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 11:49:05.278  INFO 2224 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 11:49:05.279  INFO 2224 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 11:49:05.279  INFO 2224 --- [main] team.zlg.file.Application                : \
-2023-03-24 11:49:05.284  INFO 2224 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 11:49:05.284  INFO 2224 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 11:51:04.987  INFO 2224 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 11:51:04.987  INFO 2224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 11:51:04.990  INFO 2224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-03-24 11:51:05.069 ERROR 2224 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:09.269 ERROR 2224 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:09.283 ERROR 2224 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:11.082 ERROR 2224 --- [http-nio-8081-exec-4] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:11.707 ERROR 2224 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:12.799 ERROR 2224 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:39.552 ERROR 2224 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:49.919 ERROR 2224 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:51:52.236 ERROR 2224 --- [http-nio-8081-exec-10] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:52:00.183 ERROR 2224 --- [http-nio-8081-exec-1] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:52:21.467 ERROR 2224 --- [http-nio-8081-exec-2] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:52:26.827 ERROR 2224 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:52:51.893 ERROR 2224 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 11:53:01.499 ERROR 2224 --- [http-nio-8081-exec-6] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:53:02.700 ERROR 2224 --- [http-nio-8081-exec-7] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:53:02.951 ERROR 2224 --- [http-nio-8081-exec-8] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:53:03.013 ERROR 2224 --- [http-nio-8081-exec-9] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:54:54.297 ERROR 2224 --- [http-nio-8081-exec-10] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:56:12.386 ERROR 2224 --- [http-nio-8081-exec-1] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:57:20.169 ERROR 2224 --- [http-nio-8081-exec-2] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 11:58:13.540  INFO 8796 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 8796 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 11:58:13.543  INFO 8796 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 11:58:14.332  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 11:58:14.333  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 11:58:14.349  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2023-03-24 11:58:14.357  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 11:58:14.358  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 11:58:14.367  INFO 8796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 11:58:14.849  INFO 8796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 11:58:14.856  INFO 8796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 11:58:14.856  INFO 8796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 11:58:14.933  INFO 8796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 11:58:14.933  INFO 8796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1332 ms
-2023-03-24 11:58:15.070  INFO 8796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 11:58:15.111  INFO 8796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 11:58:15.239  INFO 8796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 11:58:15.386  INFO 8796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 11:58:15.831  INFO 8796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 11:58:15.841  INFO 8796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 11:58:16.337  INFO 8796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 11:58:16.345  INFO 8796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 11:58:18.712  WARN 8796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 11:58:19.199  INFO 8796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 11:58:19.655  INFO 8796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 11:58:20.373  INFO 8796 --- [main] team.zlg.file.Application                : Started Application in 7.201 seconds (JVM running for 8.657)
-2023-03-24 11:58:20.379  INFO 8796 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 11:58:20.380  INFO 8796 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 11:58:20.381  INFO 8796 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 11:58:20.381  INFO 8796 --- [main] team.zlg.file.Application                : \
-2023-03-24 11:58:20.388  INFO 8796 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 11:58:20.388  INFO 8796 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 11:58:25.294  INFO 8796 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 11:58:25.294  INFO 8796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 11:58:25.296  INFO 8796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-24 11:58:25.506 ERROR 8796 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 12:02:30.684  WARN 8796 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s860ms616µs300ns).
-2023-03-24 12:02:37.714 ERROR 8796 --- [http-nio-8081-exec-2] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
-2023-03-24 12:02:37.922  INFO 8796 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-03-24 12:02:37.925  INFO 8796 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 12:02:37.927  INFO 8796 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-24 12:02:37.929  INFO 8796 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-24 12:02:44.732  INFO 4256 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 4256 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 12:02:44.735  INFO 4256 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 12:02:45.478  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 12:02:45.479  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 12:02:45.491  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-03-24 12:02:45.497  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 12:02:45.498  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 12:02:45.506  INFO 4256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 12:02:45.946  INFO 4256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 12:02:45.952  INFO 4256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 12:02:45.953  INFO 4256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 12:02:46.029  INFO 4256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 12:02:46.029  INFO 4256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
-2023-03-24 12:02:46.160  INFO 4256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 12:02:46.203  INFO 4256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 12:02:46.331  INFO 4256 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 12:02:46.468  INFO 4256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 12:02:46.906  INFO 4256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 12:02:46.916  INFO 4256 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 12:02:47.410  INFO 4256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 12:02:47.417  INFO 4256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 12:02:49.714  WARN 4256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 12:02:50.075  INFO 4256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 12:02:50.456  INFO 4256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 12:02:51.281  INFO 4256 --- [main] team.zlg.file.Application                : Started Application in 6.987 seconds (JVM running for 8.033)
-2023-03-24 12:02:51.289  INFO 4256 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 12:02:51.289  INFO 4256 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 12:02:51.290  INFO 4256 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 12:02:51.290  INFO 4256 --- [main] team.zlg.file.Application                : \
-2023-03-24 12:02:51.297  INFO 4256 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 12:02:51.298  INFO 4256 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 12:02:55.817  INFO 4256 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 12:02:55.817  INFO 4256 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 12:02:55.820  INFO 4256 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-03-24 12:02:56.045 ERROR 4256 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 12:04:49.251  INFO 4256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-03-24 12:04:49.253  INFO 4256 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 12:04:49.255  INFO 4256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-24 12:04:49.259  INFO 4256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-24 12:04:56.382  INFO 18064 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 18064 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 12:04:56.385  INFO 18064 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 12:04:57.124  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 12:04:57.124  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 12:04:57.137  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-03-24 12:04:57.142  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 12:04:57.143  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 12:04:57.150  INFO 18064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 12:04:57.515  INFO 18064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 12:04:57.521  INFO 18064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 12:04:57.521  INFO 18064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 12:04:57.590  INFO 18064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 12:04:57.590  INFO 18064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1150 ms
-2023-03-24 12:04:57.700  INFO 18064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 12:04:57.731  INFO 18064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 12:04:57.832  INFO 18064 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 12:04:57.957  INFO 18064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 12:04:58.401  INFO 18064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 12:04:58.409  INFO 18064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 12:04:58.815  INFO 18064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 12:04:58.820  INFO 18064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 12:04:59.628  WARN 18064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 12:04:59.784  INFO 18064 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 12:04:59.950  INFO 18064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 12:05:00.360  INFO 18064 --- [main] team.zlg.file.Application                : Started Application in 4.315 seconds (JVM running for 5.153)
-2023-03-24 12:05:00.362  INFO 18064 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 12:05:00.363  INFO 18064 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 12:05:00.363  INFO 18064 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 12:05:00.363  INFO 18064 --- [main] team.zlg.file.Application                : \
-2023-03-24 12:05:00.367  INFO 18064 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 12:05:00.367  INFO 18064 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 12:05:04.906  INFO 18064 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 12:05:04.907  INFO 18064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 12:05:04.908  INFO 18064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-24 12:05:07.567 ERROR 18064 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 14:30:39.425  WARN 18064 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h13m10s734ms735µs600ns).
-2023-03-24 14:37:55.145  INFO 4216 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 4216 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 14:37:55.148  INFO 4216 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 14:37:55.897  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 14:37:55.897  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 14:37:55.909  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-03-24 14:37:55.915  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 14:37:55.915  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 14:37:55.923  INFO 4216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 14:37:56.290  INFO 4216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 14:37:56.295  INFO 4216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 14:37:56.296  INFO 4216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 14:37:56.366  INFO 4216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 14:37:56.366  INFO 4216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1158 ms
-2023-03-24 14:37:56.476  INFO 4216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 14:37:56.508  INFO 4216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 14:37:56.603  INFO 4216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 14:37:56.713  INFO 4216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 14:37:57.139  INFO 4216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 14:37:57.147  INFO 4216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 14:37:57.565  INFO 4216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 14:37:57.571  INFO 4216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 14:37:58.376  WARN 4216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 14:37:58.530  INFO 4216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 14:37:58.708  INFO 4216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 14:37:59.096  INFO 4216 --- [main] team.zlg.file.Application                : Started Application in 4.313 seconds (JVM running for 5.075)
-2023-03-24 14:37:59.098  INFO 4216 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 14:37:59.099  INFO 4216 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 14:37:59.099  INFO 4216 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 14:37:59.099  INFO 4216 --- [main] team.zlg.file.Application                : \
-2023-03-24 14:37:59.104  INFO 4216 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 14:37:59.104  INFO 4216 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 14:38:04.004  INFO 4216 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 14:38:04.005  INFO 4216 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 14:38:04.006  INFO 4216 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-24 14:38:31.069  INFO 17600 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 17600 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 14:38:31.072  INFO 17600 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 14:38:31.832  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 14:38:31.832  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 14:38:31.847  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2023-03-24 14:38:31.854  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 14:38:31.854  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 14:38:31.863  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2023-03-24 14:38:32.307  INFO 17600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 14:38:32.314  INFO 17600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 14:38:32.315  INFO 17600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 14:38:32.389  INFO 17600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 14:38:32.390  INFO 17600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
-2023-03-24 14:38:32.521  INFO 17600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 14:38:32.559  INFO 17600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 14:38:32.681  INFO 17600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 14:38:32.839  INFO 17600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 14:38:33.326  INFO 17600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 14:38:33.337  INFO 17600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 14:38:33.869  INFO 17600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 14:38:33.877  INFO 17600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 14:38:36.759  WARN 17600 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 14:38:37.123  INFO 17600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 14:38:37.517  INFO 17600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 14:38:38.275  INFO 17600 --- [main] team.zlg.file.Application                : Started Application in 7.678 seconds (JVM running for 8.717)
-2023-03-24 14:38:38.282  INFO 17600 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 14:38:38.282  INFO 17600 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 14:38:38.283  INFO 17600 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 14:38:38.283  INFO 17600 --- [main] team.zlg.file.Application                : \
-2023-03-24 14:38:38.290  INFO 17600 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 14:38:38.290  INFO 17600 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 14:38:44.966  INFO 17600 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 14:38:44.966  INFO 17600 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 14:38:44.969  INFO 17600 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-03-24 14:39:46.645  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s321ms929µs500ns).
-2023-03-24 14:42:06.516  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m43s24ms212µs900ns).
-2023-03-24 14:44:12.042  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s526ms468µs900ns).
-2023-03-24 14:45:16.532  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s489ms899µs200ns).
-2023-03-24 14:46:22.797  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s264ms456µs).
-2023-03-24 14:47:19.926  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s129ms7µs300ns).
-2023-03-24 14:49:14.729  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s803ms690µs600ns).
-2023-03-24 14:50:39.720  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s990ms523µs200ns).
-2023-03-24 14:52:29.343  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s623ms532µs500ns).
-2023-03-24 14:54:48.703  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s359ms284µs).
-2023-03-24 14:56:46.196  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m57s493ms130µs300ns).
-2023-03-24 14:59:03.099  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m16s903ms102µs300ns).
-2023-03-24 15:00:23.187  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s668ms430µs100ns).
-2023-03-24 15:03:06.265  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m43s77ms506µs900ns).
-2023-03-24 15:04:12.544  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s280ms358µs900ns).
-2023-03-24 15:05:59.159  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s614ms311µs500ns).
-2023-03-24 15:07:21.755  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s361ms719µs).
-2023-03-24 15:08:13.236  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s481ms293µs500ns).
-2023-03-24 15:09:41.079  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s202ms834µs800ns).
-2023-03-24 15:12:23.326  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s649ms403µs800ns).
-2023-03-24 15:14:44.766  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s440ms864µs).
-2023-03-24 15:15:51.576  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s810ms19µs200ns).
-2023-03-24 15:17:27.501  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s237ms327µs100ns).
-2023-03-24 15:18:13.254  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s752ms333µs700ns).
-2023-03-24 15:19:39.757  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m26s502ms909µs200ns).
-2023-03-24 15:28:00.591  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m47s564ms909µs300ns).
-2023-03-24 15:30:09.598  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s8ms370µs100ns).
-2023-03-24 15:30:58.842  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s243ms366µs900ns).
-2023-03-24 15:35:13.973  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s131ms141µs700ns).
-2023-03-24 15:37:01.257  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m47s283ms734µs800ns).
-2023-03-24 15:38:49.871  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s614ms236µs900ns).
-2023-03-24 15:44:54.191  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m58s682ms204µs200ns).
-2023-03-24 15:46:16.032  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s479ms79µs100ns).
-2023-03-24 15:59:11.592  WARN 17600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m37s258ms9µs).
-2023-03-24 15:59:58.731  INFO 17600 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-03-24 15:59:58.733  INFO 17600 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 15:59:58.737  INFO 17600 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-24 16:00:06.392  INFO 12004 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 12004 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
-2023-03-24 16:00:06.396  INFO 12004 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
-2023-03-24 16:00:07.254  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 16:00:07.254  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-03-24 16:00:07.268  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2023-03-24 16:00:07.275  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-03-24 16:00:07.275  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-24 16:00:07.285  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2023-03-24 16:00:07.673  INFO 12004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-24 16:00:07.679  INFO 12004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-24 16:00:07.679  INFO 12004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2023-03-24 16:00:07.749  INFO 12004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-24 16:00:07.750  INFO 12004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
-2023-03-24 16:00:07.869  INFO 12004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-24 16:00:07.905  INFO 12004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2023-03-24 16:00:08.017  INFO 12004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-24 16:00:08.149  INFO 12004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-24 16:00:08.579  INFO 12004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-24 16:00:08.588  INFO 12004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-24 16:00:09.020  INFO 12004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-24 16:00:09.027  INFO 12004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-24 16:00:09.848  WARN 12004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-24 16:00:10.001  INFO 12004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-03-24 16:00:10.166  INFO 12004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-24 16:00:10.538  INFO 12004 --- [main] team.zlg.file.Application                : Started Application in 4.486 seconds (JVM running for 5.372)
-2023-03-24 16:00:10.540  INFO 12004 --- [main] team.zlg.file.Application                : 项目启动成功
-2023-03-24 16:00:10.541  INFO 12004 --- [main] team.zlg.file.Application                : /E:/Graduation%20Project/xiguafile/target/classes/
-2023-03-24 16:00:10.541  INFO 12004 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\
-2023-03-24 16:00:10.541  INFO 12004 --- [main] team.zlg.file.Application                : \
-2023-03-24 16:00:10.545  INFO 12004 --- [main] team.zlg.file.Application                : \upload\20230324
-2023-03-24 16:00:10.545  INFO 12004 --- [main] team.zlg.file.Application                : E:\Graduation Project\xiguafile\target\classes\static\
-2023-03-24 16:00:14.596  INFO 12004 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-24 16:00:14.596  INFO 12004 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-24 16:00:14.598  INFO 12004 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-24 16:31:17.067 ERROR 12004 --- [http-nio-8081-exec-10] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:32:52.657 ERROR 12004 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:33:11.412 ERROR 12004 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:44:41.840 ERROR 12004 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:44:44.233 ERROR 12004 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:45:03.912 ERROR 12004 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
-2023-03-24 16:45:54.711 ERROR 12004 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:37:32.555  INFO 15300 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 15300 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 20:37:32.560  INFO 15300 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 20:37:33.475  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:37:33.476  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 20:37:33.490  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2023-04-22 20:37:33.497  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:37:33.497  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 20:37:33.510  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-22 20:37:33.523  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:37:33.525  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 20:37:33.543  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-04-22 20:37:34.199  INFO 15300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 20:37:34.220  INFO 15300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 20:37:34.220  INFO 15300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 20:37:34.366  INFO 15300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 20:37:34.366  INFO 15300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1744 ms
+2023-04-22 20:37:34.586  INFO 15300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 20:37:34.645  INFO 15300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 20:37:34.867  INFO 15300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 20:37:34.985  INFO 15300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 20:37:35.892  INFO 15300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 20:37:35.907  INFO 15300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 20:37:36.655  INFO 15300 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 20:37:36.665  INFO 15300 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:37:39.723  WARN 15300 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 20:37:40.249  INFO 15300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:37:40.729  WARN 15300 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2023-04-22 20:37:40.730  INFO 15300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:37:40.757  INFO 15300 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:37:40.763  INFO 15300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 20:37:40.770  INFO 15300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 20:37:40.774  INFO 15300 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 20:37:40.788  INFO 15300 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-22 20:37:40.812 ERROR 15300 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2023-04-22 20:37:59.693  INFO 22164 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 22164 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 20:37:59.697  INFO 22164 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 20:38:00.620  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:38:00.621  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 20:38:00.634  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 20:38:00.640  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:38:00.641  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 20:38:00.649  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 20:38:00.660  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:38:00.662  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 20:38:00.673  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 20:38:01.250  INFO 22164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 20:38:01.262  INFO 22164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 20:38:01.262  INFO 22164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 20:38:01.396  INFO 22164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 20:38:01.397  INFO 22164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1645 ms
+2023-04-22 20:38:01.647  INFO 22164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 20:38:01.694  INFO 22164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 20:38:01.884  INFO 22164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 20:38:01.975  INFO 22164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 20:38:02.648  INFO 22164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 20:38:02.658  INFO 22164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 20:38:03.521  INFO 22164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 20:38:03.531  INFO 22164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:38:06.655  WARN 22164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 20:38:07.251  INFO 22164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:38:07.801  INFO 22164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 20:38:08.356  INFO 22164 --- [main] team.zlg.file.Application                : Started Application in 9.336 seconds (JVM running for 10.842)
+2023-04-22 20:38:08.362  INFO 22164 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 20:38:22.644  INFO 22164 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 20:38:22.644  INFO 22164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 20:38:22.647  INFO 22164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 20:38:22.824 ERROR 22164 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:38:23.871 ERROR 22164 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:38:23.883 ERROR 22164 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:38:54.348  INFO 22164 --- [http-nio-8081-exec-4] team.zlg.file.controller.UserController  : code=7362
+2023-04-22 20:39:02.365 ERROR 22164 --- [http-nio-8081-exec-4] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2023-04-22 20:39:17.838  INFO 22164 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : {}
+2023-04-22 20:39:17.839 ERROR 22164 --- [http-nio-8081-exec-5] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
+2023-04-22 20:39:23.114  INFO 22164 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : {}
+2023-04-22 20:39:23.114 ERROR 22164 --- [http-nio-8081-exec-6] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
+2023-04-22 20:39:52.581  INFO 22164 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : {}
+2023-04-22 20:39:52.582 ERROR 22164 --- [http-nio-8081-exec-7] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：java.lang.NullPointerException
+2023-04-22 20:48:40.435 ERROR 22164 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:48:40.459 ERROR 22164 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:49:02.028  INFO 22164 --- [http-nio-8081-exec-10] team.zlg.file.controller.UserController  : code=4029
+2023-04-22 20:49:04.460 ERROR 22164 --- [http-nio-8081-exec-10] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2023-04-22 20:49:13.913  INFO 22164 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:49:14.049  INFO 22164 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:49:14.053  INFO 22164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 20:49:14.063  INFO 22164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 20:49:33.583  INFO 7672 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 7672 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 20:49:33.591  INFO 7672 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 20:49:34.469  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:49:34.469  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 20:49:34.483  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 20:49:34.488  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:49:34.488  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 20:49:34.497  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 20:49:34.508  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 20:49:34.509  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 20:49:34.519  INFO 7672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 20:49:34.942  INFO 7672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 20:49:34.950  INFO 7672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 20:49:34.950  INFO 7672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 20:49:35.052  INFO 7672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 20:49:35.052  INFO 7672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2023-04-22 20:49:35.180  INFO 7672 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 20:49:35.225  INFO 7672 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 20:49:35.378  INFO 7672 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 20:49:35.445  INFO 7672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 20:49:35.979  INFO 7672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 20:49:35.987  INFO 7672 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 20:49:36.407  INFO 7672 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 20:49:36.414  INFO 7672 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 20:49:37.774  WARN 7672 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 20:49:38.194  INFO 7672 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 20:49:38.474  INFO 7672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 20:49:38.712  INFO 7672 --- [main] team.zlg.file.Application                : Started Application in 5.528 seconds (JVM running for 6.587)
+2023-04-22 20:49:38.714  INFO 7672 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 20:49:51.551  INFO 7672 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 20:49:51.551  INFO 7672 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 20:49:51.555  INFO 7672 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 20:49:51.664 ERROR 7672 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:49:52.345 ERROR 7672 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:49:52.360 ERROR 7672 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:49:58.566  INFO 7672 --- [http-nio-8081-exec-4] team.zlg.file.controller.UserController  : code=3132
+2023-04-22 20:50:01.903 ERROR 7672 --- [http-nio-8081-exec-4] t.z.f.a.GlobalExceptionHandlerAdvice     : 全局异常捕获：org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2023-04-22 20:58:30.156 ERROR 7672 --- [http-nio-8081-exec-10] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:58:30.182 ERROR 7672 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 20:58:46.128  INFO 7672 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : code=7057
+2023-04-22 20:59:01.185  INFO 7672 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : {phone=13547362586, code=7057}
+2023-04-22 21:00:00.029 ERROR 7672 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:01:40.828  INFO 7672 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : code=8510
+2023-04-22 21:02:32.652  INFO 7672 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : {phone=15281082186, code=8510}
+2023-04-22 21:02:46.721 ERROR 7672 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:25:27.775  INFO 9488 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 9488 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 21:25:27.778  INFO 9488 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 21:25:28.640  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:25:28.641  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 21:25:28.653  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-22 21:25:28.659  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:25:28.659  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 21:25:28.667  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 21:25:28.685  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:25:28.686  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 21:25:28.696  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 21:25:29.218  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 21:25:29.230  INFO 9488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 21:25:29.231  INFO 9488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 21:25:29.361  INFO 9488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 21:25:29.362  INFO 9488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1525 ms
+2023-04-22 21:25:29.510  INFO 9488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 21:25:29.572  INFO 9488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 21:25:29.763  INFO 9488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 21:25:29.846  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 21:25:30.417  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 21:25:30.429  INFO 9488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 21:25:30.955  INFO 9488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 21:25:30.962  INFO 9488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 21:25:32.346  WARN 9488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 21:25:32.722  INFO 9488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 21:25:32.947  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 21:25:33.179  INFO 9488 --- [main] team.zlg.file.Application                : Started Application in 5.871 seconds (JVM running for 7.038)
+2023-04-22 21:25:33.181  INFO 9488 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 21:26:01.658  INFO 9488 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 21:26:01.658  INFO 9488 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 21:26:01.661  INFO 9488 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 21:26:01.760 ERROR 9488 --- [http-nio-8081-exec-1] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:26:01.813 ERROR 9488 --- [http-nio-8081-exec-2] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:26:16.590  INFO 9488 --- [http-nio-8081-exec-3] team.zlg.file.controller.UserController  : code=5302
+2023-04-22 21:27:04.069  INFO 9488 --- [http-nio-8081-exec-4] team.zlg.file.controller.UserController  : {phone=15281082186, code=5302}
+2023-04-22 21:33:21.005  INFO 11396 --- [main] team.zlg.file.Application                : Starting Application using Java 1.8.0_131 on MILUYOU with PID 11396 (E:\Graduation Project\xiguafile\target\classes started by 86135 in E:\Graduation Project\xiguafile)
+2023-04-22 21:33:21.008  INFO 11396 --- [main] team.zlg.file.Application                : No active profile set, falling back to default profiles: default
+2023-04-22 21:33:21.786  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:33:21.787  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-22 21:33:21.800  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2023-04-22 21:33:21.806  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:33:21.807  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 21:33:21.815  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-04-22 21:33:21.826  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-22 21:33:21.827  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-22 21:33:21.837  INFO 11396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-04-22 21:33:22.316  INFO 11396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-22 21:33:22.324  INFO 11396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 21:33:22.325  INFO 11396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-04-22 21:33:22.496  INFO 11396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 21:33:22.496  INFO 11396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1442 ms
+2023-04-22 21:33:22.684  INFO 11396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 21:33:22.739  INFO 11396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-04-22 21:33:22.908  INFO 11396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 21:33:23.000  INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 21:33:23.636  INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 21:33:23.647  INFO 11396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-22 21:33:24.174  INFO 11396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 21:33:24.182  INFO 11396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 21:33:25.723  WARN 11396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 21:33:26.171  INFO 11396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-22 21:33:26.521  INFO 11396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-22 21:33:26.837  INFO 11396 --- [main] team.zlg.file.Application                : Started Application in 6.25 seconds (JVM running for 7.555)
+2023-04-22 21:33:26.840  INFO 11396 --- [main] team.zlg.file.Application                : 项目启动成功
+2023-04-22 21:34:27.685  INFO 11396 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 21:34:27.685  INFO 11396 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 21:34:27.688  INFO 11396 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 21:34:32.221 ERROR 11396 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:34:37.109 ERROR 11396 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:34:43.070 ERROR 11396 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:34:51.145  INFO 11396 --- [http-nio-8081-exec-8] team.zlg.file.controller.UserController  : code=9467
+2023-04-22 21:35:17.788  INFO 11396 --- [http-nio-8081-exec-9] team.zlg.file.controller.UserController  : {phone=13547362586, code=9467}
+2023-04-22 21:35:22.962 ERROR 11396 --- [http-nio-8081-exec-5] team.zlg.file.controller.UserController  : 解码异常
+2023-04-22 21:35:48.964  INFO 11396 --- [http-nio-8081-exec-6] team.zlg.file.controller.UserController  : code=6791
+2023-04-22 21:37:22.376  INFO 11396 --- [http-nio-8081-exec-7] team.zlg.file.controller.UserController  : code=8608

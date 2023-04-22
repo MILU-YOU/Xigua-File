@@ -34,7 +34,7 @@ public class LocalStorageUploader extends Uploader {
     }
 
     @Override
-    public List<UploadFile> upload(HttpServletRequest httpServletRequest, UploadFile uploadFile) {
+    public List<UploadFile>  upload(HttpServletRequest httpServletRequest, UploadFile uploadFile) {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
         StandardMultipartHttpServletRequest standardMultipartHttpServletRequest = (StandardMultipartHttpServletRequest) httpServletRequest;
         boolean isMultipart = ServletFileUpload.isMultipartContent(standardMultipartHttpServletRequest);
@@ -59,7 +59,7 @@ public class LocalStorageUploader extends Uploader {
         return saveUploadFileList;
     }
 
-    private List<UploadFile> doUpload(StandardMultipartHttpServletRequest standardMultipartHttpServletRequest, String savePath, Iterator<String> iter, UploadFile uploadFile) throws IOException, NotSameFileException {
+    private List<UploadFile> doUpload(StandardMultipartHttpServletRequest standardMultipartHttpServletRequest, String savePath, Iterator<String> iter, UploadFile  uploadFile) throws IOException, NotSameFileException {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
         //通过文件名拿到具体的文件，得到其唯一标识以及文件名，文件类型存入uploadFile对象中
         MultipartFile multipartfile = standardMultipartHttpServletRequest.getFile(iter.next());

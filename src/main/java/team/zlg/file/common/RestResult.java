@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 public class RestResult<T> {
-    private Boolean success = true;
+     private Boolean success = true;
     private Integer code;
     private String message;
     private T data;

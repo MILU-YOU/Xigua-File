@@ -4,6 +4,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 import team.zlg.file.common.RestResult;
+import team.zlg.file.constant.FileConstant;
 import team.zlg.file.dto.DownloadFileDTO;
 import team.zlg.file.dto.UploadFileDTO;
 import team.zlg.file.model.File;
@@ -21,6 +22,7 @@ import team.zlg.file.vo.UploadFileVO;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,11 +49,10 @@ public class FiletransferController {
 
             return RestResult.fail().message("未登录");
         }
-
         UploadFileVO uploadFileVo = new UploadFileVO();
         Map<String, Object> param = new HashMap<String, Object>();
         //查询数据库中是否有与上传文件相同的identifier，如果是则直接上传成功，设置用户文件相关属性保存到数据库，并返回跳过上传
-        param.put("identifier", uploadFileDto.getIdentifier()); 
+        param.put("identifier", uploadFileDto.getIdentifier());
         synchronized (FiletransferController.class) {
             List<File> list = fileService.listByMap(param);
             if (list != null && !list.isEmpty()) {
@@ -77,7 +78,6 @@ public class FiletransferController {
             }
         }
         return RestResult.success().data(uploadFileVo);
-
     }
 
     @Operation(summary = "上传文件", description = "真正的上传文件接口", tags = {"filetransfer"})

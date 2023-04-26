@@ -100,6 +100,8 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
             //文件删除的时候pointCount也减 1，此时如果引用数量大于 0，则文件逻辑删除，等于 0 时文件需要彻底物理删除
             File file = fileMapper.selectById(userFileTemp.getFileId());
 
+            int pointCount = file.getPointCount() - 1;
+
             LambdaUpdateWrapper<UserFile> userFileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
             userFileLambdaUpdateWrapper.set(UserFile::getDeleteFlag, 1)
                     .set(UserFile::getDeleteTime, DateUtil.getCurrentTime())
@@ -107,6 +109,10 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
                     .eq(UserFile::getUserFileId, userFileTemp.getUserFileId());
             userfileMapper.update(null, userFileLambdaUpdateWrapper);
 
+            //可能需要加锁
+            if(pointCount <= 0){
+
+            }
         }
 
         RecoveryFile recoveryFile = new RecoveryFile();

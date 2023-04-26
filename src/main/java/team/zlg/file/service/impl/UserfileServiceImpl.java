@@ -16,6 +16,10 @@ import team.zlg.file.model.UserFile;
 import team.zlg.file.service.UserfileService;
 import team.zlg.file.util.DateUtil;
 import team.zlg.file.vo.UserfileListVO;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -99,6 +103,8 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
             UserFile userFileTemp = userfileMapper.selectById(userFileId);
             //文件删除的时候pointCount也减 1，此时如果引用数量大于 0，则文件逻辑删除，等于 0 时文件需要彻底物理删除
             File file = fileMapper.selectById(userFileTemp.getFileId());
+
+            int pointCount = file.getPointCount()-1;
 
             LambdaUpdateWrapper<UserFile> userFileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
             userFileLambdaUpdateWrapper.set(UserFile::getDeleteFlag, 1)

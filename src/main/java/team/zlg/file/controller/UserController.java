@@ -87,7 +87,7 @@ public class UserController {
         //从redis中获取保存的验证码
         Object codeInRedis = redisTemplate.opsForValue().get(phone);
 
-        //进行验证码的比对(页面提交的验证码和Session中保存的验证码比对)
+        //进行验证码的比对(页面提交的验证码和redis中保存的验证码比对)
         if(codeInRedis != null&& codeInRedis.equals(code)){
             //如果能够比对成功，说明登录成功
 

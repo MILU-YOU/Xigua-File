@@ -1,5 +1,6 @@
 package team.zlg.file.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
@@ -52,9 +53,16 @@ public class FiletransferController {
         UploadFileVO uploadFileVo = new UploadFileVO();
         Map<String, Object> param = new HashMap<String, Object>();
         //查询数据库中是否有与上传文件相同的identifier，如果是则直接上传成功，设置用户文件相关属性保存到数据库，并返回跳过上传
-        param.put("identifier", uploadFileDto.getIdentifier());
+        //param.put("identifier", uploadFileDto.getIdentifier());
         synchronized (FiletransferController.class) {
-            List<File> list = fileService.listByMap(param);
+
+            //当数据库中有相同identifier，且pointCount>0时则走极速上传
+            LambdaQueryWrapper<File> fileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+            fileLambdaQueryWrapper.eq(File::getIdentifier,uploadFileDto.getIdentifier())
+                    .gt(File::getPointCount,0);
+            List<File> list = fileService.list(fileLambdaQueryWrapper);
+
+            //List<File> list = fileService.listByMap(param);
             if (list != null && !list.isEmpty()) {
                 File file = list.get(0);
 
@@ -69,7 +77,10 @@ public class FiletransferController {
                 userfile.setUploadTime(DateUtil.getCurrentTime());
                 userfile.setDeleteFlag(0);
                 userfileService.save(userfile);
-                // fileService.increaseFilePointCount(file.getFileId());
+
+                //每有一个人上传已存在的文件，将file的pointCount+1
+                fileService.increaseFilePointCount(file);
+
                 uploadFileVo.setSkipUpload(true);
 
             } else {

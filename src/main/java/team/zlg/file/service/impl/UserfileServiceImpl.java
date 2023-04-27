@@ -15,7 +15,13 @@ import team.zlg.file.model.RecoveryFile;
 import team.zlg.file.model.UserFile;
 import team.zlg.file.service.UserfileService;
 import team.zlg.file.util.DateUtil;
+import team.zlg.file.util.PathUtil;
 import team.zlg.file.vo.UserfileListVO;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -99,8 +105,12 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
             UserFile userFileTemp = userfileMapper.selectById(userFileId);
             //文件删除的时候pointCount也减 1，此时如果引用数量大于 0，则文件逻辑删除，等于 0 时文件需要彻底物理删除
             File file = fileMapper.selectById(userFileTemp.getFileId());
-
+            //可能要加锁
             int pointCount = file.getPointCount() - 1;
+            LambdaUpdateWrapper<File> fileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
+            fileLambdaUpdateWrapper.set(File::getPointCount,pointCount)
+                    .eq(File::getFileId,file.getFileId());
+            fileMapper.update(null, fileLambdaUpdateWrapper);
 
             LambdaUpdateWrapper<UserFile> userFileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
             userFileLambdaUpdateWrapper.set(UserFile::getDeleteFlag, 1)
@@ -109,9 +119,21 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
                     .eq(UserFile::getUserFileId, userFileTemp.getUserFileId());
             userfileMapper.update(null, userFileLambdaUpdateWrapper);
 
-            //可能需要加锁
+            //物理删除上传的文件，如果是图片，还要删除图片的缩率图文件。可能需要加锁
             if(pointCount <= 0){
-
+                Path path = Paths.get(PathUtil.getStaticPath() + file.getFileUrl());
+                try {
+                    Files.delete(path);   //返回值void
+                    if(userFileTemp.getExtendName().equals("jpg")){
+                        StringBuilder  minFilePath = new StringBuilder(PathUtil.getStaticPath() + file.getFileUrl());
+                        int index = minFilePath.indexOf(".");
+                        minFilePath.insert(index,"_min");
+                        Path minPath = Paths.get(minFilePath.toString());
+                        Files.delete(minPath);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
@@ -162,6 +184,31 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
                                 .eq(UserFile::getUserFileId, userFileTemp.getUserFileId())
                                 .eq(UserFile::getDeleteFlag, 0);
                         userfileMapper.update(null, userFileLambdaUpdateWrapper1);
+
+                        File file = fileMapper.selectById(userFileTemp.getFileId());
+
+                        int pointCount = file.getPointCount() - 1;
+                        LambdaUpdateWrapper<File> fileLambdaUpdateWrapper = new LambdaUpdateWrapper<>();
+                        fileLambdaUpdateWrapper.set(File::getPointCount,pointCount)
+                                .eq(File::getFileId,file.getFileId());
+                        fileMapper.update(null, fileLambdaUpdateWrapper);
+
+                        //物理删除上传的文件，如果是图片，还要删除图片的缩率图文件。可能需要加锁
+                        if(pointCount <= 0){
+                            Path path = Paths.get(PathUtil.getStaticPath() + file.getFileUrl());
+                            try {
+                                Files.delete(path);   //返回值void
+                                if(userFileTemp.getExtendName().equals("jpg")){
+                                    StringBuilder  minFilePath = new StringBuilder(PathUtil.getStaticPath() + file.getFileUrl());
+                                    int index = minFilePath.indexOf(".");
+                                    minFilePath.insert(index,"_min");
+                                    Path minPath = Paths.get(minFilePath.toString());
+                                    Files.delete(minPath);
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
                     }
                 });
 

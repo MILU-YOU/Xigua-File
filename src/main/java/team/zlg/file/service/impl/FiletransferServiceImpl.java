@@ -1,5 +1,6 @@
 package team.zlg.file.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.stereotype.Service;
 import team.zlg.file.dto.DownloadFileDTO;
 import team.zlg.file.dto.UploadFileDTO;
@@ -12,6 +13,7 @@ import team.zlg.file.operation.download.Downloader;
 import team.zlg.file.operation.download.domain.DownloadFile;
 import team.zlg.file.operation.upload.Uploader;
 import team.zlg.file.operation.upload.domain.UploadFile;
+import team.zlg.file.service.FileService;
 import team.zlg.file.service.FiletransferService;
 import team.zlg.file.util.DateUtil;
 import team.zlg.file.util.PropertiesUtil;
@@ -29,9 +31,10 @@ public class FiletransferServiceImpl implements FiletransferService {
     FileMapper fileMapper;
     @Resource
     UserfileMapper userfileMapper;
-
     @Resource
     FileOperationFactory localStorageOperationFactory;
+    @Resource
+    FileService fileService;
 
     @Override
     public void uploadFile(HttpServletRequest request, UploadFileDTO uploadFileDto, Long userId) {
@@ -65,20 +68,22 @@ public class FiletransferServiceImpl implements FiletransferService {
             file.setTimeStampName(uploadFile.getTimeStampName());
             //如果上传成功，将上传的文件数据写入数据库中
             if (uploadFile.getSuccess() == 1){
-                file.setFileUrl(uploadFile.getUrl());
-                file.setFileSize(uploadFile.getFileSize());
-                file.setPointCount(1);
-                fileMapper.insert(file);
-                UserFile userFile = new UserFile();
-                userFile.setFileId(file.getFileId());
-                userFile.setExtendName(uploadFile.getFileType());
-                userFile.setFileName(uploadFile.getFileName());
-                userFile.setFilePath(uploadFileDto.getFilePath());
-                userFile.setDeleteFlag(0);
-                userFile.setUserId(userId);
-                userFile.setIsDir(0);
-                userFile.setUploadTime(DateUtil.getCurrentTime());
-                userfileMapper.insert(userFile);
+
+                    file.setFileUrl(uploadFile.getUrl());
+                    file.setFileSize(uploadFile.getFileSize());
+                    file.setPointCount(1);
+                    fileMapper.insert(file);
+                    UserFile userFile = new UserFile();
+                    userFile.setFileId(file.getFileId());
+                    userFile.setExtendName(uploadFile.getFileType());
+                    userFile.setFileName(uploadFile.getFileName());
+                    userFile.setFilePath(uploadFileDto.getFilePath());
+                    userFile.setDeleteFlag(0);
+                    userFile.setUserId(userId);
+                    userFile.setIsDir(0);
+                    userFile.setUploadTime(DateUtil.getCurrentTime());
+                    userfileMapper.insert(userFile);
+//                }
             }
 
         }

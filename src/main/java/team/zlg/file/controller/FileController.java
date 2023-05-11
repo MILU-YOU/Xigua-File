@@ -47,7 +47,7 @@ public class FileController {
         lambdaQueryWrapper.eq(UserFile::getFileName, createFileDto.getFileName()).eq(UserFile::getFilePath, createFileDto.getFilePath()).eq(UserFile::getUserId, sessionUser.getUserId());
         List<UserFile> userfiles = userfileService.list(lambdaQueryWrapper);
         if (!userfiles.isEmpty()) {
-            RestResult.fail().message("同目录下文件名重复");
+            return RestResult.fail().message("同目录下文件名重复");
         }
 
         UserFile userFile = new UserFile();

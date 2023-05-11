@@ -17,6 +17,7 @@ import team.zlg.file.service.FileService;
 import team.zlg.file.service.FiletransferService;
 import team.zlg.file.util.DateUtil;
 import team.zlg.file.util.PropertiesUtil;
+import team.zlg.file.util.RSA;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -37,7 +38,7 @@ public class FiletransferServiceImpl implements FiletransferService {
     FileService fileService;
 
     @Override
-    public void uploadFile(HttpServletRequest request, UploadFileDTO uploadFileDto, Long userId) {
+    public void uploadFile(HttpServletRequest request, UploadFileDTO uploadFileDto, Long userId,int flag) {
 
         //把前端传来的uploadFileDto的信息保存进uploadFile对象中
         Uploader uploader = null;
@@ -58,7 +59,7 @@ public class FiletransferServiceImpl implements FiletransferService {
         }
 
         //调用上传方法
-        List<UploadFile> uploadFileList = uploader.upload(request, uploadFile);
+        List<UploadFile> uploadFileList = uploader.upload(request, uploadFile,flag);
         for (int i = 0; i < uploadFileList.size(); i++){
             uploadFile = uploadFileList.get(i);
             File file = new File();
@@ -66,6 +67,13 @@ public class FiletransferServiceImpl implements FiletransferService {
             file.setIdentifier(uploadFileDto.getIdentifier());
             file.setStorageType(Integer.parseInt(storageType));
             file.setTimeStampName(uploadFile.getTimeStampName());
+
+            //如果是加密文件需将加密key和VI也保存进数据库中
+            if(flag == 1) {
+                file.setFileKey(uploadFile.getFileKey());
+                file.setIV(uploadFile.getIv());
+            }
+
             //如果上传成功，将上传的文件数据写入数据库中
             if (uploadFile.getSuccess() == 1){
 
@@ -83,14 +91,14 @@ public class FiletransferServiceImpl implements FiletransferService {
                     userFile.setIsDir(0);
                     userFile.setUploadTime(DateUtil.getCurrentTime());
                     userfileMapper.insert(userFile);
-//                }
             }
 
         }
     }
 
+
     @Override
-    public void downloadFile(HttpServletResponse httpServletResponse, DownloadFileDTO downloadFileDTO) {
+    public void downloadFile(HttpServletResponse httpServletResponse, DownloadFileDTO downloadFileDTO,int flag) throws RSA.pqException {
         UserFile userFile = userfileMapper.selectById(downloadFileDTO.getUserFileId());
 
         String fileName = userFile.getFileName() + "." + userFile.getExtendName();
@@ -111,7 +119,11 @@ public class FiletransferServiceImpl implements FiletransferService {
         DownloadFile downloadFile = new DownloadFile();
         downloadFile.setFileUrl(file.getFileUrl());
         downloadFile.setTimeStampName(file.getTimeStampName());
-        downloader.download(httpServletResponse, downloadFile);
+        if(flag == 1) {
+            downloadFile.setKey(file.getFileKey());
+            downloadFile.setIv(file.getIV());
+        }
+        downloader.download(httpServletResponse, downloadFile,flag);
     }
 
     @Override

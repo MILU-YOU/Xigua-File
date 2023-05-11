@@ -11,20 +11,24 @@ import team.zlg.file.exception.NotSameFileException;
 import team.zlg.file.exception.UploadException;
 import team.zlg.file.operation.upload.Uploader;
 import team.zlg.file.operation.upload.domain.UploadFile;
+import team.zlg.file.util.AES_128;
 import team.zlg.file.util.FileUtil;
 import team.zlg.file.util.PathUtil;
+import team.zlg.file.util.RSA;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.UUID;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
+import java.util.*;
 
 @Component
 public class LocalStorageUploader extends Uploader {
@@ -34,7 +38,7 @@ public class LocalStorageUploader extends Uploader {
     }
 
     @Override
-    public List<UploadFile>  upload(HttpServletRequest httpServletRequest, UploadFile uploadFile) {
+    public List<UploadFile>  upload(HttpServletRequest httpServletRequest, UploadFile uploadFile,int flag) {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
         StandardMultipartHttpServletRequest standardMultipartHttpServletRequest = (StandardMultipartHttpServletRequest) httpServletRequest;
         boolean isMultipart = ServletFileUpload.isMultipartContent(standardMultipartHttpServletRequest);
@@ -49,17 +53,21 @@ public class LocalStorageUploader extends Uploader {
             Iterator<String> iter = standardMultipartHttpServletRequest.getFileNames();
             //可能上传有多个文件
             while (iter.hasNext()) {
-                saveUploadFileList = doUpload(standardMultipartHttpServletRequest, savePath, iter, uploadFile);
+                saveUploadFileList = doUpload(standardMultipartHttpServletRequest, savePath, iter, uploadFile,flag);
             }
         } catch (IOException e) {
             throw new UploadException("未包含文件上传域");
         } catch (NotSameFileException notSameFileException) {
             notSameFileException.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (RSA.pqException e) {
+            e.printStackTrace();
         }
         return saveUploadFileList;
     }
 
-    private List<UploadFile> doUpload(StandardMultipartHttpServletRequest standardMultipartHttpServletRequest, String savePath, Iterator<String> iter, UploadFile  uploadFile) throws IOException, NotSameFileException {
+    private List<UploadFile> doUpload(StandardMultipartHttpServletRequest standardMultipartHttpServletRequest, String savePath, Iterator<String> iter, UploadFile  uploadFile,int flag) throws IOException, NotSameFileException, NoSuchAlgorithmException, RSA.pqException {
         List<UploadFile> saveUploadFileList = new ArrayList<UploadFile>();
         //通过文件名拿到具体的文件，得到其唯一标识以及文件名，文件类型存入uploadFile对象中
         MultipartFile multipartfile = standardMultipartHttpServletRequest.getFile(iter.next());
@@ -78,6 +86,7 @@ public class LocalStorageUploader extends Uploader {
         String tempFilePath = savePath + FILE_SEPARATOR + timeStampName + "." + fileType + "_tmp";
         String minFilePath = savePath + FILE_SEPARATOR + timeStampName + "_min" + "." + fileType;
         String confFilePath = savePath + FILE_SEPARATOR + timeStampName + "." + "conf";
+
         //上传文件
         File file = new File(PathUtil.getStaticPath() + FILE_SEPARATOR + saveFilePath);
         //临时文件
@@ -86,9 +95,9 @@ public class LocalStorageUploader extends Uploader {
         File minFile = new File(PathUtil.getStaticPath() + FILE_SEPARATOR + minFilePath);
         //配置文件
         File confFile = new File(PathUtil.getStaticPath() + FILE_SEPARATOR + confFilePath);
+
         // uploadFile.setIsOSS(0);
         // uploadFile.setStorageType(0);
-        uploadFile.setUrl(saveFilePath);
 
         if (StringUtils.isEmpty(uploadFile.getTaskId())) {
             uploadFile.setTaskId(UUID.randomUUID().toString());
@@ -119,11 +128,51 @@ public class LocalStorageUploader extends Uploader {
             if (StringUtils.isNotBlank(md5) && !md5.equals(uploadFile.getIdentifier())) {
                 throw new NotSameFileException();
             }
+
             //临时文件转为正式文件
             tempFile.renameTo(file);
-            //如果上传文件为图像，则生成图像缩略图
-            if (FileUtil.isImageFile(uploadFile.getFileType())){
-                Thumbnails.of(file).size(300, 300).toFile(minFile);
+
+            if(flag == 1){
+                String encrypFilePath = savePath + FILE_SEPARATOR + timeStampName + "_encryp" + "." + fileType;
+                //加密文件
+                File encrypFile = new File(PathUtil.getStaticPath() + FILE_SEPARATOR + encrypFilePath);
+
+                uploadFile.setUrl(encrypFilePath);
+
+                //进行文件加密并删除原文件
+                String key = AES_128.generateKey();
+                String IV = AES_128.generateIV();
+                AES_128 aes = new AES_128(key,IV);
+                aes.encrypted(file.getPath(), encrypFile.getPath());
+                Path path = Paths.get(file.getPath());
+                Files.delete(path);
+
+                //加密密钥
+                RSA rsa = new RSA(new BigInteger("65537"), 0, 1024);
+                BigInteger[] c = rsa.encryption(key);
+
+                //将加密的密钥转换为String类型并保存进数据库中
+                String s = Arrays.toString(c);
+                String[] split = s.split("");
+                String[] s0 = new String[split.length-2];
+                for(int i=0;i<split.length-2;i++){
+                    s0[i]=split[i+1];
+                }
+                StringBuffer s1 = new StringBuffer();
+                for (String string : s0) {
+                    s1.append(string);
+                }
+                String s2 = s1.toString();
+                uploadFile.setFileKey(s2);
+
+                uploadFile.setIv(IV);
+            }else{
+                uploadFile.setUrl(saveFilePath);
+
+                //如果上传文件为图像，则生成图像缩略图
+                if (FileUtil.isImageFile(uploadFile.getFileType())){
+                    Thumbnails.of(file).size(300, 300).toFile(minFile);
+                }
             }
 
             uploadFile.setSuccess(1);

@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 
 @Data
 @Table(name = "file")
@@ -38,5 +39,11 @@ public class File {
     //pointCount 用来保存文件的引用数量，当上传文件在服务器已存在，则 pointCount 加 1，文件删除的时候减 1，此时如果引用数量大于 0，则文件逻辑删除，等于 0 时文件需要彻底物理删除
     @Column(columnDefinition="int(1) comment '引用数量'")
     private Integer pointCount;
+
+    @Column(columnDefinition="varchar(500) comment '文件密钥'")
+    private String fileKey;
+
+    @Column(columnDefinition = "varchar(500)  comment '初始化向量'")
+    private String IV;
 
 }

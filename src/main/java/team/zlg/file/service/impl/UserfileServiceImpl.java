@@ -119,12 +119,24 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
                     .eq(UserFile::getUserFileId, userFileTemp.getUserFileId());
             userfileMapper.update(null, userFileLambdaUpdateWrapper);
 
-            //物理删除上传的文件，如果是图片，还要删除图片的缩率图文件。可能需要加锁
+            //物理删除上传的文件，如果是图片，还要删除图片的缩略图文件。可能需要加锁
             if(pointCount <= 0){
                 Path path = Paths.get(PathUtil.getStaticPath() + file.getFileUrl());
                 try {
                     Files.delete(path);   //返回值void
-                    if(userFileTemp.getExtendName().equals("jpg")){
+
+                    //根据是否有filekey判断是否为加密文件
+                    LambdaQueryWrapper<UserFile> userFileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+                    userFileLambdaQueryWrapper.eq(UserFile::getUserFileId,userFileId);
+                    UserFile userFile1 = userfileMapper.selectOne(userFileLambdaQueryWrapper);
+                    Long fileId = userFile1.getFileId();
+                    LambdaQueryWrapper<File> fileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+                    fileLambdaQueryWrapper.eq(File::getFileId,fileId);
+                    File file1 = fileMapper.selectOne(fileLambdaQueryWrapper);
+                    String fileKey = file1.getFileKey();
+
+                    //删除缩略图
+                    if(userFileTemp.getExtendName().equals("jpg") && fileKey == null){
                         StringBuilder  minFilePath = new StringBuilder(PathUtil.getStaticPath() + file.getFileUrl());
                         int index = minFilePath.indexOf(".");
                         minFilePath.insert(index,"_min");
@@ -254,7 +266,8 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
     public List<UserFile> selectFilePathTreeByUserId(Long userId) {
         LambdaQueryWrapper<UserFile> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         lambdaQueryWrapper.eq(UserFile::getUserId, userId)
-                .eq(UserFile::getIsDir, 1);
+                .eq(UserFile::getIsDir, 1)
+                .eq(UserFile::getDeleteFlag,0);
         return userfileMapper.selectList(lambdaQueryWrapper);
     }
 

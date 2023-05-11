@@ -22,7 +22,7 @@ public abstract class Uploader {
     // 文件大小限制，单位KB
     public final int maxSize = 10000000;
 
-    public abstract List<UploadFile> upload(HttpServletRequest request, UploadFile uploadFile);
+    public abstract List<UploadFile> upload(HttpServletRequest request, UploadFile uploadFile,int flag);
 
     /**
      * 根据字符串创建本地目录 并按照日期建立子目录返回

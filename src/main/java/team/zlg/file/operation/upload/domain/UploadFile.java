@@ -2,6 +2,8 @@ package team.zlg.file.operation.upload.domain;
 
 import lombok.Data;
 
+import java.math.BigInteger;
+
 @Data
 public class UploadFile {
     private String fileName;
@@ -19,4 +21,6 @@ public class UploadFile {
     private String identifier;
     private long totalSize;
     private long currentChunkSize;
+    private String fileKey;
+    private String iv;
 }

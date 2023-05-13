@@ -11,6 +11,7 @@ import team.zlg.file.util.AES_128;
 import team.zlg.file.util.RSA;
 
 import java.awt.*;
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
@@ -25,19 +26,14 @@ public class ApplicationTest {
     private UserMapper userMapper;
 */
 
-/*
+
     @Test
     public void test1() {
-        User user = new User();
-        user.setUsername("用户名1");
-        user.setPassword("密码1");
-        user.setTelephone("手机号1");
-        userMapper.insertUser(user);
-        System.out.println("数据库字段查询结果显示");
-        List<User> list = userMapper.selectUser();
-        list.forEach(System.out::println);
+        String pqeFileName = System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator
+                +"java"+File.separator+"team"+File.separator+"zlg"+File.separator+"file"+File.separator+"utile"+File.separator+"pge.txt";
+        System.out.println(pqeFileName);
     }
-*/
+
 
  /*   @Test
     public void test2() {

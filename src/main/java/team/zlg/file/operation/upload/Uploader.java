@@ -29,11 +29,40 @@ public abstract class Uploader {
      *
      * @return
      */
-    protected String getSaveFilePath() {
+    protected String getNormalSaveFilePath() {
 
         String path = ROOT_PATH;
             SimpleDateFormat formater = new SimpleDateFormat("yyyyMMdd");
-        path = FILE_SEPARATOR + path + FILE_SEPARATOR + formater.format(new Date());
+        path = FILE_SEPARATOR + path + FILE_SEPARATOR + formater.format(new Date()) + FILE_SEPARATOR + "common";
+
+        String staticPath = PathUtil.getStaticPath();
+
+        File dir = new File(staticPath + path);
+        //LOG.error(PathUtil.getStaticPath() + path);
+        if (!dir.exists()) {
+            try {
+                boolean isSuccessMakeDir = dir.mkdirs();
+                if (!isSuccessMakeDir) {
+                    log.error("目录创建失败:" + PathUtil.getStaticPath() + path);
+                }
+            } catch (Exception e) {
+                log.error("目录创建失败" + PathUtil.getStaticPath() + path);
+                return "";
+            }
+        }
+        return path;
+    }
+
+    /**
+     * 根据字符串创建本地目录 并按照日期建立子目录返回
+     *
+     * @return
+     */
+    protected String getEncryptedSaveFilePath() {
+
+        String path = ROOT_PATH;
+        SimpleDateFormat formater = new SimpleDateFormat("yyyyMMdd");
+        path = FILE_SEPARATOR + path + FILE_SEPARATOR + formater.format(new Date()) + FILE_SEPARATOR + "encrypted";
 
         String staticPath = PathUtil.getStaticPath();
 

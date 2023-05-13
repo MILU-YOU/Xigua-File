@@ -54,7 +54,7 @@ public class UserController {
             SMSUtils.sendMessage("西瓜网盘","SMS_276395681",telephone,code);
 
             //需要将生成的验证码保存到Session
-            //session.setAttribute(telephone,code);
+//            session.setAttribute(telephone,code);
 
             //将生成的验证码保存到redis中
             redisTemplate.opsForValue().set(telephone,code,5, TimeUnit.MINUTES);

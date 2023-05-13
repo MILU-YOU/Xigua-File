@@ -44,7 +44,10 @@ public class FileController {
             RestResult.fail().message("token认证失败");
         }
         LambdaQueryWrapper<UserFile> lambdaQueryWrapper = new LambdaQueryWrapper<>();
-        lambdaQueryWrapper.eq(UserFile::getFileName, createFileDto.getFileName()).eq(UserFile::getFilePath, createFileDto.getFilePath()).eq(UserFile::getUserId, sessionUser.getUserId());
+        lambdaQueryWrapper.eq(UserFile::getFileName, createFileDto.getFileName())
+                .eq(UserFile::getFilePath, createFileDto.getFilePath())
+                .eq(UserFile::getUserId, sessionUser.getUserId())
+                .eq(UserFile::getDeleteFlag,0);
         List<UserFile> userfiles = userfileService.list(lambdaQueryWrapper);
         if (!userfiles.isEmpty()) {
             return RestResult.fail().message("同目录下文件名重复");

@@ -7,13 +7,11 @@ import java.security.NoSuchAlgorithmException;
 public class AES_128 {
     public static String generateKey() throws NoSuchAlgorithmException{ //generate key 128bit,//系统会自动产生密钥，返回的string就是密钥
         String key = AesUtil.getRandomString(32);
-        System.out.println(key);
         return key;
     }
 
     public static String generateIV(){   //generate IV   return string iv
         String IV = AesUtil.getRandomString(32);
-        System.out.println("iv:" + IV);
         return IV;
     }
 

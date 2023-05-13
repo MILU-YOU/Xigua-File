@@ -42,7 +42,7 @@ public class FiletransferController {
     @Resource
     FiletransferService filetransferService;
 
-    @Operation(summary = "极速上传", description = "校验文件MD5判断文件是否存在，如果存在直接上传成功并返回skipUpload=true，如果不存在返回skipUpload=false需要再次调用该接口的POST方法", tags = {"filetransfer"})
+    @Operation(summary = "普通文件极速上传", description = "校验文件MD5判断文件是否存在，如果存在直接上传成功并返回skipUpload=true，如果不存在返回skipUpload=false需要再次调用该接口的POST方法", tags = {"filetransfer"})
     @GetMapping(value = "/uploadfile")
     public RestResult<UploadFileVO> uploadFileSpeed(UploadFileDTO uploadFileDto, @RequestHeader("token") String token) {
 
@@ -70,6 +70,67 @@ public class FiletransferController {
             //当数据库中有相同identifier，且pointCount>0时则走极速上传
             LambdaQueryWrapper<File> fileLambdaQueryWrapper = new LambdaQueryWrapper<>();
             fileLambdaQueryWrapper.eq(File::getIdentifier,uploadFileDto.getIdentifier())
+                    .isNull(File::getFileKey)
+                    .gt(File::getPointCount,0);
+            List<File> list = fileService.list(fileLambdaQueryWrapper);
+
+            //List<File> list = fileService.listByMap(param);
+            if (list != null && !list.isEmpty()) {
+                File file = list.get(0);
+
+                UserFile userfile = new UserFile();
+                userfile.setFileId(file.getFileId());
+                userfile.setUserId(sessionUser.getUserId());
+                userfile.setFilePath(uploadFileDto.getFilePath());
+                userfile.setFileName(fileName.substring(0, fileName.lastIndexOf(".")));
+                userfile.setExtendName(FileUtil.getFileExtendName(fileName));
+                userfile.setIsDir(0);
+                userfile.setUploadTime(DateUtil.getCurrentTime());
+                userfile.setDeleteFlag(0);
+                userfileService.save(userfile);
+
+                //每有一个人上传已存在的文件，将file的pointCount+1
+                fileService.increaseFilePointCount(file);
+
+                uploadFileVo.setSkipUpload(true);
+
+            } else {
+                uploadFileVo.setSkipUpload(false);
+
+            }
+        }
+        return RestResult.success().data(uploadFileVo);
+    }
+
+    @Operation(summary = "加密文件极速上传", description = "校验文件MD5判断文件是否存在，如果存在直接上传成功并返回skipUpload=true，如果不存在返回skipUpload=false需要再次调用该接口的POST方法", tags = {"filetransfer"})
+    @GetMapping(value = "/encryptedupload")
+    public RestResult<UploadFileVO> encrypteduploadFileSpeed(UploadFileDTO uploadFileDto, @RequestHeader("token") String token) {
+
+        User sessionUser = userService.getUserByToken(token);
+        if (sessionUser == null){
+
+            return RestResult.fail().message("未登录");
+        }
+
+        String fileName = uploadFileDto.getFilename();
+        LambdaQueryWrapper<UserFile> userFileLambdaQueryWrapper = new LambdaQueryWrapper();
+        userFileLambdaQueryWrapper.eq(UserFile::getFilePath,uploadFileDto.getFilePath())
+                .eq(UserFile::getFileName,fileName.substring(0, fileName.lastIndexOf(".")))
+                .eq(UserFile::getExtendName,FileUtil.getFileExtendName(fileName))
+                .eq(UserFile::getUserId,sessionUser.getUserId())
+                .eq(UserFile::getDeleteFlag,0);
+        List<UserFile> userfiles = userfileService.list(userFileLambdaQueryWrapper);
+        if(!userfiles.isEmpty()){
+            return RestResult.fail().message("此位置已经包含同名文件");
+        }
+
+        UploadFileVO uploadFileVo = new UploadFileVO();
+        //查询数据库中是否有与上传文件相同的identifier，如果是则直接上传成功，设置用户文件相关属性保存到数据库，并返回跳过上传
+        synchronized (FiletransferController.class) {
+            //当数据库中有相同identifier，且pointCount>0时则走极速上传
+            LambdaQueryWrapper<File> fileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+            fileLambdaQueryWrapper.eq(File::getIdentifier,uploadFileDto.getIdentifier())
+                    .isNotNull(File::getFileKey)
                     .gt(File::getPointCount,0);
             List<File> list = fileService.list(fileLambdaQueryWrapper);
 
@@ -161,9 +222,7 @@ public class FiletransferController {
     public RestResult<Long> getStorage(@RequestHeader("token") String token) {
 
         User sessionUserBean = userService.getUserByToken(token);
-        Storage storageBean = new Storage();
-
-
+//        Storage storageBean = new Storage();
         Long storageSize = filetransferService.selectStorageSizeByUserId(sessionUserBean.getUserId());
         return RestResult.success().data(storageSize);
 

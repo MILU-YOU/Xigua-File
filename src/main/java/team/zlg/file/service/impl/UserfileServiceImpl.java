@@ -89,6 +89,7 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
 
         UserFile userFile = userfileMapper.selectById(userFileId);
         String uuid = UUID.randomUUID().toString();
+
         if (userFile.getIsDir() == 1) {
             LambdaUpdateWrapper<UserFile> userFileLambdaUpdateWrapper = new LambdaUpdateWrapper<UserFile>();
             userFileLambdaUpdateWrapper.set(UserFile::getDeleteFlag, 1)
@@ -123,9 +124,10 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
             if(pointCount <= 0){
                 Path path = Paths.get(PathUtil.getStaticPath() + file.getFileUrl());
                 try {
+                    //删除文件
                     Files.delete(path);   //返回值void
 
-                    //根据是否有filekey判断是否为加密文件
+                    //根据是否有filekey判断是否为加密文件,如果是加密文件则不需要删除缩略图
                     LambdaQueryWrapper<UserFile> userFileLambdaQueryWrapper = new LambdaQueryWrapper<>();
                     userFileLambdaQueryWrapper.eq(UserFile::getUserFileId,userFileId);
                     UserFile userFile1 = userfileMapper.selectOne(userFileLambdaQueryWrapper);
@@ -149,11 +151,12 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
             }
         }
 
-        RecoveryFile recoveryFile = new RecoveryFile();
-        recoveryFile.setUserFileId(userFileId);
-        recoveryFile.setDeleteTime(DateUtil.getCurrentTime());
-        recoveryFile.setDeleteBatchNum(uuid);
-        recoveryFileMapper.insert(recoveryFile);
+        //回收站相关操作
+//        RecoveryFile recoveryFile = new RecoveryFile();
+//        recoveryFile.setUserFileId(userFileId);
+//        recoveryFile.setDeleteTime(DateUtil.getCurrentTime());
+//        recoveryFile.setDeleteBatchNum(uuid);
+//        recoveryFileMapper.insert(recoveryFile);
 
 
     }
@@ -175,7 +178,7 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
         log.info("查询文件路径：" + filePath);
 
         //likeRight 在字段右边添加%
-        lambdaQueryWrapper.eq(UserFile::getUserId, userId).likeRight(UserFile::getFilePath, filePath);
+        lambdaQueryWrapper.eq(UserFile::getUserId, userId).likeRight(UserFile::getFilePath, filePath).eq(UserFile::getDeleteFlag,0);
         return userfileMapper.selectList(lambdaQueryWrapper);
     }
 
@@ -210,7 +213,18 @@ public class UserfileServiceImpl extends ServiceImpl<UserfileMapper, UserFile> i
                             Path path = Paths.get(PathUtil.getStaticPath() + file.getFileUrl());
                             try {
                                 Files.delete(path);   //返回值void
-                                if(userFileTemp.getExtendName().equals("jpg")){
+
+                                //根据是否有filekey判断是否为加密文件,如果是加密文件则不需要删除缩略图
+                                LambdaQueryWrapper<UserFile> userFileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+                                userFileLambdaQueryWrapper.eq(UserFile::getUserFileId,userFileTemp.getUserFileId());
+                                UserFile userFile1 = userfileMapper.selectOne(userFileLambdaQueryWrapper);
+                                Long fileId = userFile1.getFileId();
+                                LambdaQueryWrapper<File> fileLambdaQueryWrapper = new LambdaQueryWrapper<>();
+                                fileLambdaQueryWrapper.eq(File::getFileId,fileId);
+                                File file1 = fileMapper.selectOne(fileLambdaQueryWrapper);
+                                String fileKey = file1.getFileKey();
+
+                                if(userFileTemp.getExtendName().equals("jpg") && fileKey == null){
                                     StringBuilder  minFilePath = new StringBuilder(PathUtil.getStaticPath() + file.getFileUrl());
                                     int index = minFilePath.indexOf(".");
                                     minFilePath.insert(index,"_min");

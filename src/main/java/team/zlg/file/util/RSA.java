@@ -48,7 +48,9 @@ public class RSA {
         BigInteger φn;// = (p-1)(q-1)
 
         if (generateKeyFlag == 0) {// 文件读入形式产生p、q、e
-            String pqeFileName = "E:\\Graduation Project\\xiguafile\\src\\main\\java\\team\\zlg\\file\\util\\pqe.txt";
+//            String pqeFileName = "E:\\Graduation Project\\xiguafile\\src\\main\\java\\team\\zlg\\file\\util\\pqe.txt";
+            String pqeFileName = System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator
+                    +"java"+File.separator+"team"+File.separator+"zlg"+File.separator+"file"+File.separator+"util"+File.separator+"pqe.txt";
             try {
                 FileReader fileReader = new FileReader(pqeFileName);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);

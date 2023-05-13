@@ -47,7 +47,12 @@ public class LocalStorageUploader extends Uploader {
             throw new UploadException("未包含文件上传域");
         }
 
-        String savePath = getSaveFilePath();
+        String savePath = "";
+        if(flag == 0) {
+            savePath = getNormalSaveFilePath();
+        }else if(flag == 1){
+            savePath = getEncryptedSaveFilePath();
+        }
 
         try {
             Iterator<String> iter = standardMultipartHttpServletRequest.getFileNames();
@@ -130,9 +135,12 @@ public class LocalStorageUploader extends Uploader {
             }
 
             //临时文件转为正式文件
-            tempFile.renameTo(file);
+//            tempFile.renameTo(file);
 
             if(flag == 1){
+                //临时文件转为正式文件
+                tempFile.renameTo(file);
+
                 String encrypFilePath = savePath + FILE_SEPARATOR + timeStampName + "_encryp" + "." + fileType;
                 //加密文件
                 File encrypFile = new File(PathUtil.getStaticPath() + FILE_SEPARATOR + encrypFilePath);
@@ -167,6 +175,10 @@ public class LocalStorageUploader extends Uploader {
 
                 uploadFile.setIv(IV);
             }else{
+
+                //临时文件转为正式文件
+                tempFile.renameTo(file);
+
                 uploadFile.setUrl(saveFilePath);
 
                 //如果上传文件为图像，则生成图像缩略图
